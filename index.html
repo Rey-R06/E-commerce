@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/indexCss/index.css">
+    <link rel="stylesheet" href="/css/responsive/tablet.css" media="screen and (max-width: 850px)">
+    <link rel="stylesheet" href="/css/responsive/celular.css" media="screen and (max-width: 550px)">
+    <link rel="icon" type="image/png" href="/multimedia/logos/REY-06 (1).png">
+    <title>RossPy</title>
+</head>
+<body>
+    <div class="contenedorContenido">
+        <aside class="contenedorLeft">
+            <div class="menu" id="menu">
+                <img src="/multimedia/iconos/menu (1).png" alt="">
+            </div>
+            <header class="logo">
+                <img src="/multimedia/logos/REY-06 .png" width="100" alt="logo del dueño">
+                <h1>RossPy</h1>
+            </header>
+            <nav class="listaProductos" id="contenedorMenu">
+                <ul id="ul">
+                    <button class="buttonNav active" id="todos">
+                        <li>Todos los productos</li>
+                    </button>
+                    <button class="buttonNav" id="abrigos">
+                        <li>Abrigos</li>
+                    </button>
+                    <button class="buttonNav" id="camisetas">
+                        <li>Camisetas</li>
+                    </button>
+                    <button class="buttonNav" id="pantalones">
+                        <li>Pantalones</li>
+                    </button>
+                    <button class="buttonNav">
+                        <a href="/carrito.html">
+                            <img src="/multimedia/iconos/carrito-de-compras.png" width="25"><li>Carrito</li><span class="numeroCarrito">0</span>
+                        </a>
+                    </button>
+                </ul>
+            </nav>
+        </aside>
+        <main>
+            <h2 id="titulo">Todos los productos</h2>
+            <div class="contenedorProductos">
+                <!--esto se rellena desde js-->
+            </div>
+        </main>
+    </div>
+    <script src="/js/main.js"></script>
+    <script src="/js/menu.js"></script>
+</body>
+</html>

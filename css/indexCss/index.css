@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Giga:wght@100..900&display=swap');
+
+
+:root {
+    --clr-main: rgb(71, 192, 71);
+    --clr-greenease: rgb(44, 216, 67);
+    --clr-white: rgb(255, 255, 255);
+    --clr-black: rgb(0, 0, 0);
+    --clr-azul: rgb(8, 185, 255);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lexend Giga", serif;
+}
+
+h1, h2, h3, h4, p, a, input, textarea, ul{
+    margin: 0;
+    padding: 0;
+}
+
+ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    display: flex;
+    color: var(--clr-black);
+}
+
+body{
+    background: var(--clr-main);
+}
+
+.contenedorContenido{
+    display: flex;
+    justify-content: end;
+}
+
+main{
+    position: relative;
+    right: 30px;
+    top: 50px;
+    background: var(--clr-white);
+    border-radius: 30px;
+    width: 80%;
+}
+
+main h2{
+    padding: 40px 50px 0;
+    font-size: 2rem;
+}
+
+.contenedorProductos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    padding: 25px 40px 50px
+}
+
+.card {
+    border-radius: 30px;
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    max-width: 100%;
+}
+
+.descripcion {
+    position: relative;
+    margin-top: -2rem;
+    background: var(--clr-main);
+    padding: 15px;
+    border-radius: 20px;
+}
+
+.descripcion h3 {
+    font-size: 1rem;
+}
+
+.descripcion p {
+    color: var(--clr-white);
+    font-weight: bold;
+    margin: 10px 0 10px 0;
+}
+
+main button {
+    background: rgb(25, 53, 25);
+    color: white;
+    padding: 5px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+main button:hover {
+    background: rgba(24, 105, 24, 0.295);
+    transition: 0.5s ease;
+}
+
+/*aside*/
+.contenedorLeft{
+    min-width: 300px;
+    width: 350px;
+    padding: 2rem;
+    padding-right: 0;
+    color: var(--clr-white);
+    position: sticky;
+    top: 0;
+    height: 100vh;
+}
+
+.active{
+    background: var(--clr-white);
+    color: var(--clr-black);
+    border-radius: 10px 0 0 10px;
+}
+
+
+.menu, .logoCelular, .ocultarMenu{
+    visibility: hidden;
+    display: none;
+}
+
+
+.logo{
+    margin-top: 50px;
+}
+
+
+.logo img{
+    margin-left: 10%;
+}
+
+.logo h1{
+    padding-left: 10%;
+}
+
+.listaProductos ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 150px;
+}
+
+ul button{
+    width: 100%;
+    height: 50px;
+    border: none;
+    background: transparent;
+    transition: 0.5s ease;
+}
+
+a img{
+    margin: 10px 0 15px 20px;
+}
+
+button:hover{
+    background: rgba(197, 214, 197, 0.507);
+    border-radius: 10px 10px 10px 10px;
+    cursor: pointer;
+}
+
+.buttonNav .numeroCarrito{
+    font-size: 1.2rem;
+    position: absolute;
+    left: 190px;
+    border-radius: 10px;
+    background: var(--clr-white);
+    width: fit-content;
+    min-width: 20px;
+    height: fit-content;
+    margin-top: 10px;
+}
+
+
+ul li{
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    text-align: left;
+    padding: 15px 0 15px 20px;
+}
+
+li img{
+    margin: 5px 15px 5px 5px;
+}
+
+/*Carrito css*/
+
+.invisible{
+    display: none;
+    visibility: hidden;
+}
+
+.contenedorCarrito{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    width: 90%;
+    margin: 30px;
+}
+
+#carritoVacio{
+    margin-left: 50px;
+}
+
+.card-Carrito{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    width: 100%;
+    height: 200px;
+    border: 1px solid rgba(226, 226, 226, 0.486);
+    background: whitesmoke;
+    margin-left: 50px;
+    border-radius: 50px;
+    color: var(--clr-main);
+    font-size: 1.2rem;
+}
+
+.card-Carrito img{
+    border-radius: 30px;
+    margin-left: 30px;
+}
+
+.card-Carrito .basura{
+    border: none;
+    background: transparent;
+}
+
+.acciones-carrito{
+    padding: 25px 80px 50px;;
+    display: flex;
+    gap: 70%;
+    align-items: center;
+}
+
+.acciones-carrito .vaciar-carrito{
+    border: none;
+    background: var(--clr-greenease);
+    color: var(--clr-white);
+}
+
+.acciones-carrito .comprar{
+    display: flex;
+    background: whitesmoke;
+    align-items: center;
+    border: 1px solid rgb(243, 243, 243);
+    border-radius: 30px;
+}
+
+.comprar p{
+    padding: 0 10px;
+}
+
+.acciones-carrito .comprar-button{
+    font-size: 1.2rem;
+    padding: 10px;
+    background: var(--clr-greenease);
+    border: none;
+    border-radius: 0 30px 30px 0;
+}
+
+

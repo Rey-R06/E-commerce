@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito</title>
+    <link rel="stylesheet" href="/css/indexCss/index.css">
+</head>
+<body>
+    <div class="contenedorContenido">
+        <aside class="contenedorLeft">
+            <header class="logo">
+                <img src="/multimedia/logos/REY-06 .png" width="200" alt="logo del dueño">
+                <h1>RossPy</h1>
+            </header>
+            <nav class="listaProductos">
+                <ul>
+                    <button><a href="/index.html"><li><img src="/multimedia/iconos/deshacer.png" width="25">Seguir comprando</li></a></button>
+                    <button><li class="active"><img src="/multimedia/iconos/carrito-de-compras.png" width="25">Carrito</li></button>
+                </ul>
+            </nav>
+        </aside>
+        <main>
+            <h2>Carrito</h2>
+            <div id="productosCarrito" class="contenedorCarrito">
+                <p id="carritoVacio"></p>
+                <!--Esto se llena con js-->
+            </div>
+            <div id="accionesCarrito" class="acciones-carrito invisible">
+                <button id="vaciarCarrito" class="vaciar-carrito">vaciar carrito</button>
+                <div class="comprar">
+                    <p>total:</p>
+                    <p id="total">$0</p>
+                    <button id="buttonComprar" class="comprar-button">comprar</button>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="/js/carrito.js"></script>
+</body>
+</html>

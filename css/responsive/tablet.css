@@ -1,0 +1,20 @@
+.contenedorProductos {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+ul li {
+    padding: 5px 0 15px 10px;
+}
+
+.contenedorLeft {
+    min-width: 200px;
+    width: 250px;
+}
+
+a img {
+    margin: 10px 0 15px 5px;
+}
+
+.buttonNav .numeroCarrito {
+    left: 150px;
+}

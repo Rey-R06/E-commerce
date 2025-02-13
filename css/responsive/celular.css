@@ -1,0 +1,101 @@
+.contenedorProductos {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 25px 20px 30px;
+}
+
+.contenedorContenido {
+    display: block;
+}
+
+.contenedorLeft {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 150px;
+    position: relative;
+    height: 170px;
+    padding: 0;
+}
+
+.menu, .logoCelular, .ocultarMenu{
+    visibility: visible;
+    display: block;
+}
+
+.logoCelular{
+    width: 100px;
+    margin: 0 30px;
+}
+
+.ocultarMenu{
+    position: absolute;
+    color: white;
+    right: 10px;
+    top: 30px;
+    border: none;
+    width: 100px;
+    height: 100px;
+    background: transparent;
+    font-size: 3rem;
+}
+
+.listaProductos{
+    position: fixed;
+    top: 0;
+    z-index: 9;
+    width: 100%;
+    transition: 1.5s ease;
+    background:  rgb(71, 192, 71);
+    border-bottom: 5px solid black;
+}
+
+.listaProductos ul {
+    visibility: hidden;
+    display: none;
+    margin-top: 10px;
+}
+
+.menu img{
+    position: absolute;
+    right: 20px;
+}
+
+.logo{
+    position: absolute;
+    left: 20px;
+}
+
+
+main {
+    right: 0;
+    min-width: 250px;
+    width: 300px;
+    margin: 0 auto;
+}
+
+
+main h2 {
+    padding: 20px 10px 0;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+button:hover{
+    background-color: white;
+    transition: none;
+    border-radius: 0; 
+}
+
+.card img {
+    max-width: 200px;
+    border-radius: 30px;
+}
+.descripcion {
+    margin: 0 auto;
+    max-width: 200px; 
+    margin-top: -3rem;
+}
+
+.active {
+    border-radius: 0;
+}
