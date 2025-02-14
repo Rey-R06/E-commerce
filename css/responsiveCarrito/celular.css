@@ -1,0 +1,7 @@
+.card-Carrito {
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 1.5rem;
+    height: auto;
+}

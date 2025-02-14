@@ -1,3 +1,12 @@
+.card-Carrito {
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 1.5rem;
+    height: auto;
+    margin-left: 10px;
+    border-color: rgba(199, 199, 199, 0.603);
+}
 .contenedorContenido{
     display: block;
 }
@@ -22,9 +31,19 @@
 
 .menu img{
     position: absolute;
+    top: 80px;
     right: 20px;
 }
 
+.contenedorCarrito {
+    width: 95%;
+    margin: 30px 0;
+}
+
+.logo{
+    position: absolute;
+    top: 0;
+}
 
 .ocultarMenu{
     position: absolute;
@@ -38,15 +57,10 @@
     font-size: 3rem;
 }
 
-.logo{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-left: 50px;
-}
 
 .listaProductos{
     position: fixed;
+    left: 0;
     top: 0;
     z-index: 9;
     width: 100%;
@@ -58,4 +72,15 @@
 main {
     right: 0;
     margin: 0 auto;
+    width: 95%;
+}
+
+.acciones-carrito{   
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 10px
+}
+.acciones-carrito .comprar-button {
+    padding: 5px;
 }
